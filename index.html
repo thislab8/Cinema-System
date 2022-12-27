@@ -1,0 +1,356 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="#">
+
+  <title>Cinema Ticket System</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="./movie_files/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://bootswatch.com/flatly/bootstrap.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+
+
+  <!-- Custom styles for this template -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/rotating-card.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/anotherDefault.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+  ================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="">
+
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Cinema Ticket System</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse float-right">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+
+                </li>
+                <li><a href="javascript:void(0)" onclick="openLoginModal();"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+
+      </div>
+    </div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item">
+          <img class="first-slide img-responsive" src="images/kgf.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>KGF:Chapter 2<p class="text-warning">Showing Now</p></h1>
+              <p><a class="btn btn-xm btn-success" href="#" role="button">Showtime and Details</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img class="second-slide img-responsive" src="images/doctor.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class=" alert alert-info">Doctor Strange in the mutliverse of madness <p class="text-warning">Coming this month</p></h1>
+              <p><a class="btn btn-xm btn-success" href="#" role="button">Showtime and Details</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <div class="container">
+      <div class="panel with-nav-tabs panel-success">
+          <div class="panel-heading">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#nowshowing" data-toggle="tab">Showing Now</a></li>
+            </ul>
+          </div>
+          <div class="panel-body">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="nowshowing">
+                  <div class='col-md-3 col-sm-12'>
+                    <div class='card-container'>
+                      <div class='card'>
+                        <div class='front'>
+                          <div class='cover'>
+                            <img src="images/bg_spiderman.png"> 
+                          </div>
+                          <div class='content'>
+                            <div class='main'>
+                              <h3 class='name'>Spiderman Homecoming</h3>
+                
+                              <p><b>IMDB: </b>8.9</p>
+                
+                              <p class='profession'><b>Genre: </b>Action/Sci-Fi</p>
+                
+                              <p class='profession'><b>Director: </b> Sam Rami</p>
+                              
+                
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end front panel -->
+                        <div class='back'>
+                          <div class='content'>
+                            <div class='main'>
+                              <h4 class='text-center'>Spiderman Homecoming</h4>
+                              <p class='text-center'>Spider-Man: Homecoming is a 2017 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel</p>
+                            </div>
+                            <div style='margin-top: 4vw;' class='buy_ticket'>
+                              <a href='ticketConfirmation.html' class='btn btn-primary btn-xs btn-block'>Click to book ticket</a>
+                            </div>
+                          </div>
+                        </div> <!-- end card -->
+                      </div> <!-- end card-container -->
+                    </div>
+                  </div>
+                  <div class='col-md-3 col-sm-12'>
+                    <div class='card-container'>
+                      <div class='card'>
+                        <div class='front'>
+                          <div class='cover'>
+                            <img src="images/doctor.jpg"> 
+                          </div>
+                          <div class='content'>
+                            <div class='main'>
+                              <h3 class='name'>Doctor Strange</h3>
+                
+                              <p><b>IMDB: </b>8.9</p>
+                
+                              <p class='profession'><b>Genre: </b>Action/Sci-Fi</p>
+                
+                              <p class='profession'><b>Director: </b> Sam Rami</p>
+                              
+                
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end front panel -->
+                        <div class='back'>
+                          <div class='content'>
+                            <div class='main'>
+                              <h4 class='text-center'>Doctor Strange</h4>
+                              <p class='text-center'>Doctor Strange in the Multiverse of Madness is a 2022 American superhero film based on Marvel Comics featuring the character Doctor Strange.</p>
+                            </div>
+                            <div style='margin-top: 4vw;' class='buy_ticket'>
+                              <a href='ticketConfirmation.html'  class='btn btn-primary btn-xs btn-block'>Click to book ticket</a>
+                            </div>
+                          </div>
+                        </div> <!-- end card -->
+                      </div> <!-- end card-container -->
+                    </div>
+                  </div>
+                  <div class='col-md-3 col-sm-12'>
+                    <div class='card-container'>
+                      <div class='card'>
+                        <div class='front'>
+                          <div class='cover'>
+                            <img src="images/thor.jpg"> 
+                          </div>
+                          <div class='content'>
+                            <div class='main'>
+                              <h3 class='name'>Thor</h3>
+                
+                              <p><b>IMDB: </b>7.9</p>
+                
+                              <p class='profession'><b>Genre: </b>Action/Sci-Fi</p>
+                
+                              <p class='profession'><b>Director: </b> Waiki</p>
+                              
+                
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end front panel -->
+                        <div class='back'>
+                          <div class='content'>
+                            <div class='main'>
+                              <h4 class='text-center'>Thor</h4>
+                              <p class='text-center'>Thor is a 2011 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount</p>
+                            </div>
+                            <div style='margin-top: 4vw;' class='buy_ticket'>
+                              <a href='ticketConfirmation.html' class='btn btn-primary btn-xs btn-block'>Click to book ticket</a>
+                            </div>
+                          </div>
+                        </div> <!-- end card -->
+                      </div> <!-- end card-container -->
+                    </div>
+                  </div>
+
+                </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="panel with-nav-tabs panel-success">
+          <div class="panel-heading">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#nowshowing" data-toggle="tab">Coming Soon</a></li>
+            </ul>
+          </div>
+          <div class="panel-body">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="nowshowing">
+                  <div class='col-md-3 col-sm-12'>
+                    <div class='card-container'>
+                      <div class='card'>
+                        <div class='front'>
+                          <div class='cover'>
+                            <img src="images/galaxy.jpg"> 
+                          </div>
+                          <div class='content'>
+                            <div class='main'>
+                              <h3 class='name'>Guardians of the Galaxy Vol. 3</h3>
+                
+                              <p><b>IMDB: </b>N/A</p>
+                
+                              <p class='profession'><b>Genre: </b>Action/Sci-Fi</p>
+                
+                              <p class='profession'><b>Director: </b>James Gunn</p>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end front panel -->
+                        <div class='back'>
+                          <div class='content'>
+                            <div class='main'>
+                              <h4 class='text-center'>Guardians of the Galaxy Vol. 3</h4>
+                              <p class='text-center'>Guardians of the Galaxy Vol. 3 is an upcoming American superhero film based on the Marvel Comics superhero team Guardians of the Galaxy, produced by Marvel Studios, and distributed by Walt Disney Studios Motion Pictures. </p>
+                            </div>
+                            <div style='margin-top: 4vw;' class='buy_ticket'>
+                              <a href='#' class='btn btn-primary btn-xs btn-block'>Click to book ticket</a>
+                            </div>
+                          </div>
+                        </div> <!-- end card -->
+                      </div> <!-- end card-container -->
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="modal fade login" id="loginModal">
+      <div class="modal-dialog login animated">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+
+          <!-- login -->
+          <div class="modal-body">  
+            <div class="box">
+              <div class="content">
+
+                <div class="error"></div>
+
+
+                <div class="form loginBox">
+                  <form method="post" action="index.html" accept-charset="UTF-8">
+                    <input id="userName" class="form-control" type="text" placeholder="Username" name="Username">
+                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Registration -->
+
+            <div class="box" id="RegistrationBox">
+              <div class="content registerBox" style="display:none;">
+                <div class="form">
+                  <form method="post" html="{:multipart=>true}" data-remote="true" action="index.html" accept-charset="UTF-8">
+                    <input id="registrationName" class="form-control" type="text" placeholder="username" name="username">
+                    <input id="registrationPassword" class="form-control" type="password" placeholder="Password" name="password">
+                    <input id="registrationPassword_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                    <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit" onclick=" RegistrationAjax(event)">
+                  </form>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="forgot login-footer">
+              <span>Looking to 
+                <a href="javascript: showRegisterForm();">create an account</a>
+                ?</span>
+              </div>
+              <div class="forgot register-footer" style="display:none">
+                <span>Already have an account?</span>
+                <a href="javascript: showLoginForm();">Login</a>
+              </div>
+            </div>        
+          </div>
+        </div>
+    </div>
+    <footer style="background-color: #4e4747; width: 100%; padding: 10px">
+      <p style="color: white; font-weight: bold; font-size: 2vw;" class="pull-right"><a href="#">Back to top</a></p>
+      <p style="color: white;    font-weight: bold;font-size: 2vw;text-shadow: aqua;text-align: center;color: white;  " >Copyright@2022-2023 Cinema Ticket System</p>		
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+  </html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="#">
+
+  <title>Cinema Ticket Systems</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="./movie_files/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://bootswatch.com/flatly/bootstrap.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+
+
+  <!-- Custom styles for this template -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/rotating-card.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/anotherDefault.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/customerPanel.css">
+    <style type="text/css">
+		.boxStyle{width: 100%;
+			border: 1px solid #ccc;
+			background: #FFF;
+			margin: 0 0 5px;
+			padding: 10px;
+			font-style: normal;
+			font-variant-ligatures: normal;
+			font-variant-caps: normal;
+			font-variant-numeric: normal;
+			font-weight: 400;
+			font-stretch: normal;
+			font-size: 12px;
+			line-height: 16px;
+			font-family: Roboto, Helvetica, Arial, sans-serif;
+			
+		}
+	</style>
+</head>
+<!-- NAVBAR
+  ================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="">
+
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Cinema Ticket System</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse float-right">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+
+                </li>
+                <li><a href="javascript:void(0)" onclick="openLoginModal();"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+
+      </div>
+    </div>
+    <section class="showtime_page">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p style="font-size: 3vw; font-weight: bold;text-align: center;">Spider-Man Homecoming </p>
+                <table class="table table-user-information">
+                <tbody>
+                   <tr>
+                      <td><strong>Movie Name </strong></td>
+                      <td>Spider-Man Homecoming</td>
+                   </tr>
+                   <tr>
+                      <td><strong>Genre</strong></td>
+                      <td>Sci-fi Action</td>
+                   </tr>
+                   <tr>
+                      <td><strong>Director</strong></td>
+                      <td>Sam rami </td>
+                   </tr>
+                   <tr>
+                   <tr>
+                      <td><strong>IMDB</strong></td>
+                      <td>8.9</td>
+                   </tr>
+                   <tr>
+                      <td><strong>Description</strong></td>
+                      <td>Spider-Man: Homecoming is a 2017 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel</td>
+                   </tr>
+                   <form action="#" method="post" >
+                      <tr>
+                         <td><strong>Date</strong></td>
+                         <td><input class="boxStyle" type="date" name="date"></td>
+                      </tr>
+                      <tr>
+                         <td><strong>Show Time</strong></td>
+                         <td>  
+                            <select name="timeSlot" class="boxStyle"> 
+                                <option value="">10 AM</option>
+                                <option value="">1 PM</option>
+                                <option value="">3 PM</option>
+                                <option value="">6 PM</option>
+                            </select>
+                         </td>
+                      </tr>
+                      <tr>
+                         <td><strong>Total Ticket</strong></td>
+                         <td>
+                            <input type="number" class="boxStyle"  name="" id="" value="1">
+                         </td>
+                      </tr>
+                      <tr>
+                         <td colspan="2" width="100%">
+                            <input class="btn btn-primary btn-xs btn-block" type="submit" name="submit" value="Request For Ticket">
+                         </td>
+                      </tr>
+                   </form>
+                </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <img src="images/spiderman.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+    
+        
+
+
+
+
+
+
+
+    <div class="modal fade login" id="loginModal">
+    <div class="modal-dialog login animated">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+
+        <!-- login -->
+        <div class="modal-body">  
+          <div class="box">
+            <div class="content">
+
+              <div class="error"></div>
+
+
+              <div class="form loginBox">
+                <form method="post" action="index.html" accept-charset="UTF-8">
+                  <input id="userName" class="form-control" type="text" placeholder="Username" name="Username">
+                  <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                  <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Registration -->
+
+          <div class="box" id="RegistrationBox">
+            <div class="content registerBox" style="display:none;">
+              <div class="form">
+                <form method="post" html="{:multipart=>true}" data-remote="true" action="index.html" accept-charset="UTF-8">
+                  <input id="registrationName" class="form-control" type="text" placeholder="username" name="username">
+                  <input id="registrationPassword" class="form-control" type="password" placeholder="Password" name="password">
+                  <input id="registrationPassword_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                  <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit" onclick=" RegistrationAjax(event)">
+                </form>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="forgot login-footer">
+            <span>Looking to 
+              <a href="javascript: showRegisterForm();">create an account</a>
+              ?</span>
+            </div>
+            <div class="forgot register-footer" style="display:none">
+              <span>Already have an account?</span>
+              <a href="javascript: showLoginForm();">Login</a>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>
+  <footer style="background-color: #4e4747; width: 100%; padding: 10px">
+    <p style="color: white; font-weight: bold; font-size: 2vw;" class="pull-right"><a href="#">Back to top</a></p>
+    <p style="color: white;    font-weight: bold;font-size: 2vw;text-shadow: aqua;text-align: center;color: white;  " >Copyright@2022-2023 Cinema Ticket System</p>		
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="js/holder.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
